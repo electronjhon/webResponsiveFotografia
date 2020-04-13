@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css"/><script src="https://kit.fontawesome.com/c6ec8cfa8e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body></body>
+  <header class="header" id="header"> <a class="logo" href="/"><img src="./assets/img/logo.png" alt="web logo"/></a>
+    <div class="topbar" id="topbar">
+      <div class="topbar__icon" data-type="login"><i class="fa fa-user"></i><span>Log in</span></div>
+      <div class="topbar__icon" data-type="register"><i class="fa fa-user-plus"></i><span>Register</span></div>
+      <div class="toggle-menu">
+        <div class="toggle-menu__icon" id="toggle-menu">
+          <div class="first-bar"></div>
+          <div class="second-bar"></div>
+          <div class="third-bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="sidebar" id="sidebar">
+    <nav class="main-nav" id="main-nav">
+      <ul class="main-menu" id="main-menu">
+        <li class="main-menu__item"><a class="main-menu__link" href="/">home</a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link" href="/about.html">about</a>
+        </li>
+        <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="/contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <hi class="title">Contact</hi>
+    <div class="contact">
+      <div class="contact__form">
+        <form class="form-contact"> 
+          <div class="form-contact__fields">
+            <input class="form-contact__input" type="text" name="name" placeholder="name"/>
+            <input class="form-contact__input" type="text" name="email" placeholder="email"/>
+            <input class="form-contact__input" type="text" name="subject" placeholder="subject"/>
+          </div>
+          <div class="form-contact__field">
+            <textarea class="form-contact__textarea" name="message"></textarea>
+          </div>
+        </form>
+        <div class="form-contact__field">
+          <input class="form__submit" type="submit" value="Send"/>
+        </div>
+      </div>
+      <div class="contact__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.595416523759!2d-74.06050619967561!3d4.665997546594047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5bf0ca914d%3A0x4754557539bff569!2sEl%20Lago%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1586087989114!5m2!1ses!2sco" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><a href="https://www.google.com/maps/place/El+Lago,+Bogot%C3%A1/@4.6659975,-74.0605062,17z/data=!4m5!3m4!1s0x8e3f9a5bf0ca914d:0x4754557539bff569!8m2!3d4.6656863!4d-74.0586529?hl=es" target="_blank"><img class="contact__img-map" src="assets/img/map.png" alt="ubication"/></a>
+      </div>
+      <div class="social">
+        <div class="social__icon"><i class="fab fa-twitter-square"></i><i class="fab fa-twitter-square"></i></div>
+        <div class="social__icon"><i class="fab fa-facebook"></i><i class="fab fa-facebook"></i></div>
+        <div class="social__icon"><i class="fab fa-instagram"></i><i class="fab fa-instagram"></i></div>
+        <div class="social__icon"><i class="fab fa-youtube-square"></i><i class="fab fa-youtube-square"></i></div>
+      </div>
+    </div>
+  </main>
+  <div class="lightbox" id="login-modal">
+    <form class="form" id="login-form">
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="login-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-password">Password</label>
+        <input class="form__input" type="password" name="password" id="login-password"/>
+      </div>
+      <div class="form__field">
+        <input class="form__submit" type="submit" name="button" value="Send"/>
+      </div>
+    </form>
+  </div>
+  <div class="lightbox" id="register-modal">
+    <form class="form" id="register-form">
+      <div class="form__field">
+        <label class="form__label" for="User">User name</label>
+        <input class="form__input" type="Text" name="user" id="user"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login-email">Email</label>
+        <input class="form__input" type="email" name="email" id="register-email"/>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login1-password">Password</label>
+        <input class="form__input" type="password" name="password1" id="register-password1"/>
+        <div class="form__mensaje" id="mensaje"></div>
+      </div>
+      <div class="form__field">
+        <label class="form__label" for="login2-password">Repeat password</label>
+        <input class="form__input" type="password" name="password2" onkeyup="comprobar()" id="register-password2"/>
+      </div>
+      <div class="form__field">
+        <input class="form__submit" type="submit" name="button" value="Send"/>
+      </div>
+    </form>
+  </div>
+  <script src="js/scripts-min.js"></script>
+</html>

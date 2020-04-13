@@ -1,0 +1,13 @@
+body{
+    background-color: $background-color;
+    color: $text-color;
+    min-height: 100vh;
+    font-family: $main-font, 'sand-serif';
+
+    @include laptop{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 60px 1fr;
+        
+    }
+}

@@ -1,0 +1,17 @@
+#register-modal.lightbox
+    form#register-form.form
+        .form__field
+            label(for='User').form__label User name
+            input(type="Text" name='user')#user.form__input
+        .form__field
+            label(for='login-email').form__label Email
+            input(type="email" name='email')#register-email.form__input
+        .form__field
+            label(for='login1-password').form__label Password
+            input(type="password" name='password1')#register-password1.form__input
+            div#mensaje.form__mensaje
+        .form__field
+            label(for='login2-password').form__label Repeat password
+            input(type="password" name='password2' onkeyup='comprobar()')#register-password2.form__input
+        .form__field
+           input(type="submit" name='button' value='Send').form__submit

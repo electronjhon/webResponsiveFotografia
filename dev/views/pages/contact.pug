@@ -1,0 +1,38 @@
+extends ../templates/template
+block menu
+    - pageActive = 'contact'
+    include ../includes/main-menu
+block title
+    hi.title Contact
+block main
+    .contact
+        .contact__form
+            form.form-contact 
+                .form-contact__fields
+                    input(type="text" name= 'name' placeholder='name').form-contact__input
+                    input(type="text" name= 'email' placeholder='email').form-contact__input
+                    input(type="text" name= 'subject' placeholder='subject').form-contact__input
+                .form-contact__field
+                    textarea(name="message").form-contact__textarea
+            .form-contact__field
+                    input(type="submit" value='Send').form__submit
+
+        .contact__map
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.595416523759!2d-74.06050619967561!3d4.665997546594047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5bf0ca914d%3A0x4754557539bff569!2sEl%20Lago%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1586087989114!5m2!1ses!2sco', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+            a(href="https://www.google.com/maps/place/El+Lago,+Bogot%C3%A1/@4.6659975,-74.0605062,17z/data=!4m5!3m4!1s0x8e3f9a5bf0ca914d:0x4754557539bff569!8m2!3d4.6656863!4d-74.0586529?hl=es", target="_blank",)
+                img(src="assets/img/map.png", alt="ubication").contact__img-map
+
+        .social
+            .social__icon
+                i.fab.fa-twitter-square
+                i.fab.fa-twitter-square
+            .social__icon
+                i.fab.fa-facebook
+                i.fab.fa-facebook
+            .social__icon
+                i.fab.fa-instagram
+                i.fab.fa-instagram
+            .social__icon
+                i.fab.fa-youtube-square
+                i.fab.fa-youtube-square
+            

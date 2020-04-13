@@ -1,0 +1,36 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    background-color: $dark-color-2;
+    padding-left: 60px;
+    z-index: 100;
+    
+
+    &__icon {
+       width: 90px; 
+       display: flex;
+       justify-content: space-around;
+       cursor: pointer;
+    }
+
+    @include laptop{
+        height: 75px;
+        left: 100%;
+        width: 35vw;
+        justify-content: space-evenly;
+        transform: translateX(-100%);
+        background-color: transparent;
+        padding-left: 0;
+    }
+
+    @include desktop{
+        width: 20vw;
+    }
+}
